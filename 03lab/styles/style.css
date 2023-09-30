@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    background-color: antiquewhite; 
+    background-color:whitesmoke; 
 }
 .content {
     max-width: 800px;
@@ -19,3 +19,25 @@ body {
     padding: 1%;
     background-color: white;
 }
+
+.container{
+    border: burlywood 1px solid;
+    border-style:dashed;
+    height: auto;
+    width: auto;
+
+}
+
+.tg  {border-spacing:1px; border: none; }
+                .tg td{font-family:Arial, sans-serif;font-size:14px;
+                    padding:3px 13px;}
+                .tg th{font-family:Arial, sans-serif;font-size:14px;
+                  font-weight:normal;padding:3px 13px;}
+                .tg .tg-time-up{background-color:#efefef;color:#da4747;font-weight:bold;text-align:center;vertical-align:bottom}
+                .tg .tg-empty{background-color:#efefef;font-size:20px;font-weight:bold;text-align:center;vertical-align:middle}
+                .tg .tg-lesson{background-color:#c0c0c0;font-size:20px;font-weight:bold;text-align:center;vertical-align:middle}
+                .tg .tg-number{background-color:#efefef;color:#da4747;font-size:36px;font-weight:bold;text-align:center;
+                  vertical-align:middle; width: 20px;margin-left: 0%; margin-right: 0%; padding: 3px 5px;}
+                .tg .tg-day{color:#cb0000;font-size:36px;text-align:left;vertical-align:bottom;height: 60px;}
+                .tg .tg-time-bot{background-color:#efefef;color:#fd6864;font-weight:bold;text-align:center;vertical-align:top}
+                
