@@ -1,0 +1,12 @@
+fildset{
+    border: 1px solid black;
+}
+
+table td, table td * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+table th, table th * {
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
