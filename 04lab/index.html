@@ -26,7 +26,129 @@
             
         </div>
     </div>
-    
+
+
+
+
+
+
+    <form>
+        <div class="form">
+            <fieldset>
+                <div class="contentForm">
+                    <div class="form1">
+                                <fieldset>
+                                     <legend><b>Date personale</b></legend>
+                                        <div style="display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto; text-align: left; padding: 0px;">
+                                            <div class="formelement1">
+                                                <p>*Numele:</p>
+                                            </div>
+                                            <div class="formelement2">
+                                                <input type="text" pattern="[a-zA-Z]*" required>
+                                            </div>
+                                            <div class="formelement1">
+                                                <p>*Prenumele</p>
+                                            </div>
+                                            <div class="formelement2">
+                                                <input type="text" pattern="[A-Za-z]*" required>
+                                            </div>
+                                            <div class="formelement1">
+                                                <p>E-mail</p>
+                                            </div>
+                                            <div class="formelement2">
+                                                <input type="email">
+                                            </div>
+                                            <div class="formelement1">
+                                                <p>*Data nasterii</p>                                                   
+                                            </div>
+                                            <div class="formelement2">
+                                                <input type="date" required>
+                                            </div>
+                                            <div class="formelement1">
+                                                <p>Sexul:</p>
+                                            </div>
+                                            <div style="grid-column: 2;">
+                                                <p><input type="radio" value="F" name="sex"/><b>F</b></p>                              
+                                            </div>
+                                            <div class="formelement3">
+                                                <p><input type="radio" value="M" name="sex"/><b>M</b></p>
+                                            </div>
+                                            <div class="formelement1">
+                                                <p>Telefonul:</p>
+                                            </div>
+                                            <div class="formelement2">
+                                                <input type="text">
+                                            </div>
+                                            <div class="formelement1">
+                                                <p>Raionul:</p>
+                                            </div>
+                                            <div class="formelement2">
+                                                <select id="Raionul">
+                                                        <option value="Edinet">Edinet</option>
+                                                        <option value="Chisinau">Chisinau</option>
+                                                        <option value="Balt">Balt</option>
+                                                </select>
+                                            </div>
+                                            <div class="formelement1" style="display: flex; align-items: center;">
+                                                <p>Studii</p>
+                                            </div>
+                                            <div class="formelement2">
+                                                <p><input type="checkbox" value="Colegiu" name="Colegiu"/>Colegiu</p>
+                                                <p><input type="checkbox" value="Licenta" name="Licenta"/>Licenta</p>
+                                                <p><input type="checkbox" value="Masterat" name="Masterat"/>Masterat</p>
+                                            </div>
+                                            <div class="formelement1">
+                                                <p>Suplementar:</p>
+                                            </div>
+                                            <div class="formelement2">
+                                                <textarea name="suplimentar" id="suplimentar" placeholder="Scrie aici" maxlength="1000" ></textarea>
+                                            </div>
+                                        </div>
+                                                                    </fieldset>
+                                </div>
+                                <div class="form2">
+                                                    <fieldset>
+                                                            <legend><b>Date despre produsul ales</b></legend>
+                                                                        <p>*Denumirea<br>produs:</p>
+                                                                                <input type="text" pattern="[A-Za-z]*" required>
+                                                                        <p>*Producatorul:</p>
+                                                                                <input type="text" pattern="[A-Za-z]*" required>
+                                                                        <p>*Canitatea de<br>produse:</p>
+                                                                                <input type="text" required>
+                                                                        <p>*Culoarea:</p>
+                                                                                <input type="color" required>
+                                                                        <p>*Marimea:</p>
+                                                                                <input type="text" required>
+                                                                            </fieldset>
+                                                </div>
+                                                <div class="form3">
+                                                    <fieldset>
+                                                            <legend><b>Date bancare</b></legend>
+                                                                        <p>*Tipul cardului:</p> 
+                                                                        <p><input required type="radio" value="Viza" name="card"/><b>Viza</b></p>   
+                                                                        <p><input required type="radio" value="MasterCard" name="card"/><b>MasterCard</b></p>
+                                                                        <p>*Numarul<br>cardului:</p>
+                                                                        <input type="text" required>
+                                                                        <p>*Expira:</p>
+                                                                        <input type="date" required>
+                                                                    </fieldset>
+                                                </div>
+                                <div class="form4">
+                                <button type="reset">Anuleaza</button>
+                                <button type="submit" formmethod="get">Trimite</button>
+                                </div>
+                                <div class="form5">
+                                <p>*Campul trebuie sa fie completat</p> 
+                                </div>                   
+        
+                                
+        </div>
+        
+        </fieldset>
+        
+        
+        </div>
+        </form>
     </div>
 </body>
 </html>
