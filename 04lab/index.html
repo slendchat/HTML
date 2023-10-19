@@ -32,11 +32,11 @@
 
 
 
-    <form>
-        <div class="form">
+    <div class="form">
+            <form>
             <fieldset>
                 <div class="contentForm">
-                    <div class="form1">
+                    <div class="form1" style="background-color: aliceblue; border-style: dashed; border-top-left-radius: 20px;">
                                 <fieldset>
                                      <legend><b>Date personale</b></legend>
                                         <div style="display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto; text-align: left; padding: 0px;">
@@ -67,11 +67,9 @@
                                             <div class="formelement1">
                                                 <p>Sexul:</p>
                                             </div>
-                                            <div style="grid-column: 2;">
-                                                <p><input type="radio" value="F" name="sex"/><b>F</b></p>                              
-                                            </div>
-                                            <div class="formelement3">
-                                                <p><input type="radio" value="M" name="sex"/><b>M</b></p>
+                                            <div class="formelement2">
+                                                <span><input type="radio" value="F" name="sex"/><b>F</b></span>                              
+                                                <span><input type="radio" value="M" name="sex"/><b>M</b></span>
                                             </div>
                                             <div class="formelement1">
                                                 <p>Telefonul:</p>
@@ -106,33 +104,83 @@
                                         </div>
                                                                     </fieldset>
                                 </div>
-                                <div class="form2">
-                                                    <fieldset>
-                                                            <legend><b>Date despre produsul ales</b></legend>
-                                                                        <p>*Denumirea<br>produs:</p>
-                                                                                <input type="text" pattern="[A-Za-z]*" required>
-                                                                        <p>*Producatorul:</p>
-                                                                                <input type="text" pattern="[A-Za-z]*" required>
-                                                                        <p>*Canitatea de<br>produse:</p>
-                                                                                <input type="text" required>
-                                                                        <p>*Culoarea:</p>
-                                                                                <input type="color" required>
-                                                                        <p>*Marimea:</p>
-                                                                                <input type="text" required>
-                                                                            </fieldset>
+                                
+                                <fieldset>
+                                    <legend><b>Date despre produsul ales</b></legend>
+                                    <div class="divTable">
+                                            <div class="divTableRow">
+                                                <div class="divTableCell">
+                                                    <p>*Denumirea<br>produs:</p>
                                                 </div>
-                                                <div class="form3">
-                                                    <fieldset>
-                                                            <legend><b>Date bancare</b></legend>
-                                                                        <p>*Tipul cardului:</p> 
-                                                                        <p><input required type="radio" value="Viza" name="card"/><b>Viza</b></p>   
-                                                                        <p><input required type="radio" value="MasterCard" name="card"/><b>MasterCard</b></p>
+                                                <div class="divTableCell">
+                                                    <input type="text" pattern="[A-Za-z]*" required>
+                                                </div>
+                                            </div>
+                                            <div class="divTableRow">
+                                                <div class="divTableCell">
+                                                <p>*Producatorul:</p>
+                                            </div>
+                                            <div class="divTableCell">
+                                                    <input type="text" pattern="[A-Za-z]*" required>
+                                                </div>
+                                            </div>
+                                            <div class="divTableRow">
+                                                <div class="divTableCell">
+                                                    <p>*Canitatea de<br>produse:</p>
+                                                </div>
+                                                <div class="divTableCell">
+                                                    <input type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="divTableRow">
+                                                <div class="divTableCell">
+                                                    <p>*Culoarea:</p>
+                                                </div>
+                                                <div class="divTableCell">
+                                                        <input type="color" required>
+                                                </div>
+                                            </div>
+                                            <div class="divTableRow">
+                                                <div class="divTableCell">
+                                                <p>*Marimea:</p>
+                                            </div>
+                                            <div class="divTableCell">
+                                                        <input type="text" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                
+                                <fieldset>
+                                        <legend><b>Date bancare</b></legend>
+                                                <div class="divTable">
+                                                            <div class="divTableRow">
+                                                                <div class="divTableCell">
+                                                                        <p>*Tipul cardului:</p>
+                                                                    </div>
+                                                                    <div class="divTableCell">
+                                                                        <span><input required type="radio" value="Viza" name="card"/><b>Viza</b></span>   
+                                                                        <span><input required type="radio" value="MasterCard" name="card"/><b>MasterCard</b></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="divTableRow">
+                                                                    <div class="divTableCell">
                                                                         <p>*Numarul<br>cardului:</p>
+                                                                    </div>
+                                                                    <div class="divTableCell">
                                                                         <input type="text" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="divTableRow">
+                                                                    <div class="divTableCell">
                                                                         <p>*Expira:</p>
+                                                                    </div>
+                                                                    <div class="divTableCell">
                                                                         <input type="date" required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                                     </fieldset>
-                                                </div>
                                 <div class="form4">
                                 <button type="reset">Anuleaza</button>
                                 <button type="submit" formmethod="get">Trimite</button>
@@ -144,11 +192,43 @@
                                 
         </div>
         
-        </fieldset>
         
         
-        </div>
-        </form>
     </div>
+</fieldset>
+</form>
+<hr>
+<br>
+<h1>Two Lists and Two Paragraphs with Random Text</h1>
+    
+<h2>List 1</h2>
+<ul>
+    <li><span>Item 1</span></li>
+    <li>Item 2</li>
+    <li><span>Item 3</span></li>
+</ul>
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend nisi eu dolor vehicula, eu faucibus sapien volutpat. Nulla facilisi. Vestibulum varius urna eu urna convallis, at vehicula odio congue.</p>
+    <span>Этот текст форматируется с помощью p ~ span </span>
+</div>
+<h2>List 2</h2>
+<ol>
+    <li><span>Item A</span></li>
+    <li>Item B</li>
+    <li><span>Item C</span></li>
+</ol>
+
+
+<span class="exmpAfter">simple text</span>
+
+
+<hr>
+<br>
+<a href="https://metanit.com/" class="link">learn programming here</a>
+<a href="https://metanit.com/" class="visited">learn programming here</a>
+<a href="https://metanit.com/" class="hover">learn programming here</a>
+<a href="https://metanit.com/" class="active">learn programming here</a>
+</div>
+
 </body>
 </html>
