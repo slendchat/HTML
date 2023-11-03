@@ -141,15 +141,16 @@ span+span{
 }
 
 ul::before {
+    content: "Список ul с hover:";
     font-weight: bold;
-    color: #0078d4;
+    color: blue;
 }
 li:hover {
     background-color:darkgrey;
 }
 p::first-letter {
     font-size: 24px;
-    color: #ff5733;
+    color: orange;
 }
 
 p::first-line {
@@ -157,6 +158,7 @@ p::first-line {
     color: black;
 }
 h2::after{
+    content: "content after";
     background-color: peru;
 }
 li:first-child {
@@ -194,22 +196,24 @@ input:checked{
 }
 
 /* Styling visited links */
-.visited:visited {
+a:visited {
     color: green;
     text-decoration: underline;
 }
 
 /* Styling links on hover */
-.hover:hover {
+a:hover {
     color: orange;
+    background-color: aquamarine;
 }
 
 /* Styling links when clicked */
-.active:active {
+a:active {
     color: black;
     background-color: lightblue;
 }
-p ~ span{
+/*на одном уровне вложенности */
+p ~ span{  
     color:darkgreen;
     background-color: #ff5733;
     font-size: 24px;
