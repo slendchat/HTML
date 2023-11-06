@@ -1,0 +1,60 @@
+fildset{
+    border: 1px solid black;
+}
+
+table td, table td * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+table th, table th * {
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+.tableKids{
+    border: 1px solid black ;
+    border-collapse: collapse;
+}
+h1{
+    display: block;
+    clear: both;
+    transition: background 0.3s ease-in-out 0s;
+}
+h1:hover{
+    background-color: gray;
+} 
+@media screen{
+    fildset{
+        border: 1px solid black;
+        float: left;
+    }
+    
+    table td, table td * {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    table th, table th * {
+        margin-top: 3px;
+        margin-bottom: 2px;
+    }
+    
+    .tableKids{
+        float: left;
+        border: 1px solid black ;
+        border-collapse: collapse;
+    }
+    table,img,map,form,fieldset,iframe,video,audio{
+        float: left;
+    }
+    h1{
+        display: block;
+        clear: both;
+        transition: background 0.3s ease-in-out 0s;
+    }
+    h1:hover{
+        background-color: gray;
+    }
+    hr{
+        clear: both;
+    }
+}
