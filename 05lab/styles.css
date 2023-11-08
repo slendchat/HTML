@@ -23,7 +23,52 @@ h1{
 h1:hover{
     background-color: gray;
 } 
-@media screen{
+.imgAnim1{
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+}
+.imgAnim2{
+    transform: scale(1, 1.5);
+    animation-name: slidein, spin;
+    animation-duration: 2s, 5s;
+    animation-iteration-count: 1,5;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        border-radius: 70px;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+      transform: rotate(90deg);
+      border: 10px solid orange;
+    }
+    50% {
+        margin-left: 25%;
+        width: 1%;
+        height: 1%;
+        transform: rotate(45deg);
+      }
+  }
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+      border: 2px solid black;
+    }
+  
+    to {
+      transform: rotate(360deg);
+      border: 2px solid black;
+    }
+    50% {
+        border: 6px solid gray;
+        transform: rotate(180deg);
+      }
+  }
+@media screen and (max-width: 992px){
     fildset{
         border: 1px solid black;
         float: left;
