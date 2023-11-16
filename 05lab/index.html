@@ -6,20 +6,21 @@
         <h1>Задание номер 1</h1>
         <br>
         <table align="center" border="0" cellspacing="20" cellpadding="10">
-                <tr>
-                        <td>
-                                <img src="Images/img1.jpg" alt="orange cat sleepin" title="Cool Cat" width="275" height="180" class="imgAnim1" >
-                        </td>
-                        <td>
+        <tr>
+        <td>
+                <img src="Images/img1.jpg" alt="orange cat sleepin" title="Cool Cat" width="275" height="180" class="imgAnim1" >
+        </td>
+        <td>
 
-                                <img src="Images/img2.jpg" alt="rabbit cat lies" title="Cool Rabbit-Cat" width="275" height="180" class="imgAnim2">
-                        </td>
-                </tr>
-                <tr>
-                        <td colspan="2" align="center">
-                                <img src="Images/img3.jpg" alt="kittens are playing" title="Two Cute Kittens" width="275" height="180" style="transform: skew(30deg, 20deg);">
-                        </td>
-                </tr>
+                <img src="Images/img2.jpg" alt="rabbit cat lies" title="Cool Rabbit-Cat" width="275" height="180" class="imgAnim2">
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2" align="center">
+                <!--skew(x-angle, y-angle)(наклон)-->
+                <img src="Images/img3.jpg" alt="kittens are playing" title="Two Cute Kittens" width="275" height="180" style="transform: skew(30deg, 20deg);">
+        </td>
+        </tr>
         </table> 
         <hr>  
         <h1>Задание номер 2 и 3</h1>     
@@ -49,10 +50,10 @@
                         </th>
                 </tr>
                 <tr valign="top">
-                        <td rowspan="2" style="background: radial-gradient(ellipse closest-side at 50% 50%, #ff0000 0%, transparent 100%);">
+                        <td rowspan="2" style="background: radial-gradient(ellipse closest-side, red 0%,white 100%);">
                                 <p>Ivanov Elena</p>
                         </td>
-                        <td rowspan="2" style="background: linear-gradient(45deg, #ff0000 0%, #00ff00 50%, #0000ff 100%);">
+                        <td rowspan="2" style="background: linear-gradient(45deg, red 0%, orange 50%, red 100%);">
                                 <p>Str. Codrilor 45, ap.56</p>
                         </td>
                         <td rowspan="2" align="center" >
@@ -66,7 +67,7 @@
                         </td>
 
                 </tr>
-                <tr valign="top" style="background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 20px, #0000ff 20px, #0000ff 40px);">
+                <tr valign="top" style="background: repeating-linear-gradient(to bottom, green, green 20px, purple 20px, purple 40px);">
                         <td>
                                 <p>Valeriu,<br>2011</p>
                         </td>
@@ -74,11 +75,11 @@
                                 <a href="HTML/2_kid.html"><img src="Images/blackkid2.jpg" width="150" height="100"></a>
                         </td>
                 </tr>
-                <tr valign="top">
-                        <td rowspan="3" style="background: repeating-radial-gradient(ellipse closest-corner, #ff0000, #ff9900 20px, #00cc00 20px, #0000ff 40px);">
+                <tr valign="top"> <!--repeating-radial-gradient(shape size at position, color-stop1, color-stop2, ...);-->
+                        <td rowspan="3" style="background: repeating-radial-gradient(circle at top, red, orange, green 20px, blue 40px);">
                                 <p>Mihailov Marta</p>
                         </td>
-                        <td rowspan="3" style="background: conic-gradient(from 0deg,red 0%,blue 30%,yellow 60%,black 100%);"   >
+                        <td rowspan="3" style="background: conic-gradient(from 0deg at 30%,red 0%,blue 30%,yellow 60%,red 100%);"   >
                                 <p>Str. Puskin 10, ap.45</p>
                         </td>
                         <td rowspan="3" align="center" >
@@ -166,7 +167,7 @@
 
 
 <form>
-<table align="center" style="background: repeating-conic-gradient(from 90deg,red 0%,blue 30%,yellow 60%,green 100%);">
+<table align="center" style="background: repeating-conic-gradient(from 90deg,red 0%,blue 15%,yellow 33%);">
 <tr>
 <td>
 <fieldset>
@@ -385,7 +386,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3426.9115869133375!2d28.824054385915574!3d47.021758609642674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c2d03e2c6b1%3A0xd8e8b74ac8c3ef7b!2z0JzQvtC70LTQsNCy0YHQutC40Lkg0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INCj0L3QuNCy0LXRgNGB0LjRgtC10YI!5e0!3m2!1sru!2s!4v1695064842161!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
         <hr>
-        <h1>Задание номер 7</h1>
+        <h1>Задание номер 7</h1><!--translate(x, y)сдвиг-->
         <video width="500" height="300" controls="" autoplay name="media" style="transform: translate(100px, -20px);">
                 <source src="Video/misha.mp4" type="video/mp4">
         </video>
