@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navClass {
+      display: flex;
+      justify-content: space-between;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #555;
+      position: absolute;
+      top: 40px;
+      right: 10px;
+      z-index: 1;
+    }
+
+    .menu a {
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #777;
+    }
+
+    #burger-checkbox {
+      display: none;
+    }
+
+    #burger-icon {
+      display: block;
+      cursor: pointer;
+    }
+
+    #burger-icon::before {
+      content: "\2630";
+      font-size: 24px;
+    }
+
+    #burger-checkbox:checked + .menu {
+      display: flex;
+    }
+
+    /* Media queries for different screen sizes */
+    @media screen and (min-width: 600px) {
+      #burger-checkbox {
+        display: none;
+      }
+
+      #burger-icon {
+        display: none;
+      }
+
+      .menu {
+        display: flex;
+        position: static;
+        background-color: #333;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      .menu {
+        flex-direction: row;
+      }
+
+      .menu a {
+        margin-right: 10px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .menu a {
+        font-size: 18px;
+      }
+    }
+.checkbox:checked ~ .menu {
+  display: block;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navClass">
+  <div style="padding: 3px;"><img src="07lab/img/randomLogo.png" width="25" height="30"></div>
+  <label id="burger-icon" for="burger-checkbox">
+    <input type="checkbox" id="burger-checkbox" class="checkbox">
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+</label>
+<div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+</nav>
+
+</body>
+</html>

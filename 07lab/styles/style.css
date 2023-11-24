@@ -1,0 +1,152 @@
+.container {
+    display: grid; 
+    grid-template-columns: 0.6fr 1.9fr 0.5fr; 
+    grid-template-rows: 0.3fr 2.5fr 0.1fr; 
+    height: 95vh;
+    gap: 8px 8px; 
+    grid-template-areas: 
+      "header header header"
+      "nav main ads"
+      "nav footer footer"; 
+  }
+
+
+.header { 
+    grid-area: header; 
+    background-color: cornflowerblue;
+}
+
+.nav { 
+    padding: 8px;
+    grid-area: nav; 
+    background-color: pink;
+}
+
+.ads { 
+    grid-area: ads; 
+    background-color: thistle;
+}
+
+.footer { 
+    grid-area: footer; 
+    background-color: lightcoral;
+}
+
+.main { 
+    grid-area: main; 
+    padding-left: 5px;
+    background-color: papayawhip;
+}
+
+.headimg{
+    margin: 30px;
+}
+
+li p{
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .image-container {
+    display: flex;
+  }
+
+  .image-container img {
+    width: 40px;
+    height: 40px; /* Установите ширину изображения по вашему усмотрению */
+    margin-right: 10px; /* Добавить отступ между изображениями */
+  }
+  .navClass {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #555;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  .menu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .menu a:hover {
+    background-color: #777;
+  }
+
+  #burger-checkbox {
+    display: none;
+  }
+
+  #burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  #burger-icon::before {
+    content: "\2630";
+    font-size: 24px;
+  }
+
+  #burger-checkbox:checked + .menu {
+    display: flex;
+  }
+
+  /* Media queries for different screen sizes */
+  @media screen and (min-width: 600px) {
+    #burger-checkbox {
+      display: none;
+    }
+
+    #burger-icon {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+      position: static;
+      background-color: #333;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .menu {
+      flex-direction: row;
+    }
+
+    .menu a {
+      margin-right: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .menu a {
+      font-size: 18px;
+    }
+  }
+.checkbox:checked ~ .menu {
+display: block;
+}
