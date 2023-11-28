@@ -66,8 +66,8 @@ body {
 
   .image-container img {
     width: 40px;
-    height: 40px; /* Установите ширину изображения по вашему усмотрению */
-    margin-right: 10px; /* Добавить отступ между изображениями */
+    height: 40px; 
+    margin-right: 10px; 
   }
   .navClass {
     display: flex;

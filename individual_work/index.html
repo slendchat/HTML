@@ -1,63 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru_RU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Genres and Recommendations</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/cthulhu.png" type="image/png">
+    <title>BOOKSTY</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <h1>Book Genres and Recommendations</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#fantasy">Fantasy</a></li>
-            <li><a href="#mystery">Mystery</a></li>
-            <li><a href="#romance">Romance</a></li>
-            <li><a href="#science-fiction">Science Fiction</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="fantasy">
-            <h2>Fantasy</h2>
-            <p>Here you will find recommendations for fantasy books and tips on how to fully immerse yourself in the magical worlds created by talented authors.</p>
-            <ul>
-                <li>Book Recommendation 1</li>
-                <li>Book Recommendation 2</li>
-                <li>Book Recommendation 3</li>
-            </ul>
-        </section>
-        <section id="mystery">
-            <h2>Mystery</h2>
-            <p>If you enjoy solving puzzles and uncovering secrets, this section will provide you with thrilling mystery book recommendations and techniques to enhance your reading experience.</p>
-            <ul>
-                <li>Book Recommendation 1</li>
-                <li>Book Recommendation 2</li>
-                <li>Book Recommendation 3</li>
-            </ul>
-        </section>
-        <section id="romance">
-            <h2>Romance</h2>
-            <p>For those who love stories of love and passion, this section offers romance book recommendations and advice on how to get lost in the world of romance novels.</p>
-            <ul>
-                <li>Book Recommendation 1</li>
-                <li>Book Recommendation 2</li>
-                <li>Book Recommendation 3</li>
-            </ul>
-        </section>
-        <section id="science-fiction">
-            <h2>Science Fiction</h2>
-            <p>Explore the wonders of the future and the possibilities of advanced technology with our science fiction book recommendations and tips on how to delve into futuristic worlds.</p>
-            <ul>
-                <li>Book Recommendation 1</li>
-                <li>Book Recommendation 2</li>
-                <li>Book Recommendation 3</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2022 Book Genres and Recommendations. All rights reserved.</p>
-    </footer>
+
+
+  <!--############################ HEADER ############################-->
+  <div class="nav-menu">
+    <nav class="navClass">
+      <div class="menuContainer">
+        <div class="namediv">
+            <a href="index.html">
+                <img src="img/cthulhu.png" width="46px" height: auto;>
+            </a>
+            <a href="index.html" class="siteName">
+                BOOKSTY
+            </a>
+        </div>
+
+        <label id="burger-icon" for="burger-checkbox">
+          <input type="checkbox" id="burger-checkbox" class="checkbox">
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="genres.html">Genres</a>
+          <a href="manga.html">Manga guide</a>
+          <a href="Advices.html">Advices</a>
+          <a href="about.html">About</a>
+          <a href="https://www.facebook.com/slendchat/?locale=ru_RU">Contact</a>
+        </div>
+      </label>
+      <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="genres.html">Genres</a>
+          <a href="manga.html">Manga guide</a>
+          <a href="Advices.html">Advices</a>
+          <a href="about.html">About</a>
+          <a href="https://www.facebook.com/slendchat/?locale=ru_RU">Contact</a>
+      </div>
+    </div>
+      </nav>
+    
+    </div>
+
+    <!--############################ BANNER ############################-->
+    <div class="banner">
+        <div style="text-align: left;">
+            <h1>Откройте мир литературы с нами</h1> 
+            <p>
+                Откройте для себя захватывающие жанры литературы. <br>
+                Получите рекомендации по лучшим книгам. <br>
+                Исследуйте страницы с описанием каждого жанра. <br>
+                Узнайте, что читать, и найдите советы по улучшению вашего чтения. <br>
+                Наш гайд поможет вам погрузиться в увлекательный мир манги. <br>
+                Приготовьтесь к приключению с <b>BOOKSTY</b>!"
+            </p>
+        </div>
+    </div>
+
+    <!--############################RECOMENDATIONS############################-->
+<div class="containerMain"> <!-- CONTAINER TO MAKE EVERYTHING SLIMMER-->
+
+    <div class="recommendations">
+        <h2>Рекомендации</h2>
+        <div class="slider">
+          <div class="book">
+            <a href="https://librarius.md/ru/book/hrebty-bezumiya-588753">
+              <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            </a>
+            <p>Хребты Безумия</p>
+          </div>
+          <div class="book">
+            <a href="https://librarius.md/ru/book/hrebty-bezumiya-588753">
+              <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            </a>
+            <p>Хребты Безумия</p>
+          </div>
+          <div class="book">
+            <a href="https://librarius.md/ru/book/hrebty-bezumiya-588753">
+              <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            </a>
+            <p>Хребты Безумия</p>
+          </div>
+          <div class="book">
+            <a href="https://librarius.md/ru/book/hrebty-bezumiya-588753">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            </a>
+            <p>Хребты Безумия</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Хребты Безумия</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Хребты Безумия</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Краткое описание книги 2.</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Краткое описание книги 2.</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Краткое описание книги 2.</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Краткое описание книги 2.</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Краткое описание книги 2.</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Краткое описание книги 2.</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Краткое описание книги 2.</p>
+          </div>
+          <div class="book">
+            <img src="img/hrebti_bezumia.jpg" alt="Book 2">
+            <p>Краткое описание книги 2.</p>
+          </div>
+          <!-- Добавьте еще книги по аналогии -->
+        </div>
+      </div>
+
+
+
+    <!--############################GENRES############################-->
+
+    <div class="genreContent">
+        <div class="best-genres">
+            <h2>Лучшие Жанры</h2>
+            <div class="genre">
+              <img src="img\hrebti_bezumia.jpg" alt="Фэнтези">
+              <p>Фэнтези</p>
+            </div>
+            <div class="genre">
+              <img src="img\hrebti_bezumia.jpg" alt="Детективы">
+              <p>Детективы</p>
+            </div>
+            <div class="genre">
+              <img src="img\hrebti_bezumia.jpg" alt="Романтика">
+              <p>Романтика</p>
+            </div>
+            <div class="genre">
+                <img src="img\hrebti_bezumia.jpg" alt="Фэнтези">
+                <p>Фэнтези</p>
+              </div>
+              <div class="genre">
+                <img src="img\hrebti_bezumia.jpg" alt="Детективы">
+                <p>Детективы</p>
+              </div>
+              <div class="genre">
+                <img src="img\hrebti_bezumia.jpg" alt="Романтика">
+                <p>Романтика</p>
+              </div>
+        </div>
+
+
+        </div>
+
+        
+
+    <!--############################TIPS############################-->
+    <div class="grid-containerTips">
+        <div class="tip">
+          <div class="tip-content">
+            <h3>Совет для чтения хорроров</h3>
+            <p>
+              Выберите правильное место и время: Чтение хорроров в темное время суток или в уединенном месте может создать атмосферу, которая усилит ваши впечатления.
+
+              Настройтесь на атмосферу: Постарайтесь погрузиться в атмосферу произведения. Вообразите окружающие места и переживайте эмоции вместе с героями.
+              
+              Не спешите: Чтобы по-настоящему насладиться хоррором, не торопитесь. Дайте себе время ощутить напряжение и создать свои представления о том, что может произойти дальше.
+              
+              Создайте паузы: Перерывы между чтением помогут вам осознать происходящее, а также сберечь нервы. Не бойтесь отложить книгу на некоторое время, если чувствуете, что вам нужно передохнуть.
+              
+              Визуализируйте сцены: Ваше воображение может сделать происходящее более реальным. Визуализируйте описанные сцены, чтобы лучше погрузиться в хоррорную атмосферу.
+              
+              Обсудите с другими: Если у вас есть друзья, которые также любят хоррор, обсудите прочитанное с ними. Обмен мнениями и эмоциями может сделать ваш опыт более насыщенным.
+              
+              Не бойтесь внутренних страхов: Чтение хорроров — это возможность лучше понять свои внутренние страхи и научиться с ними справляться. Позвольте себе переживать эмоции, но помните, что это всего лишь вымышленные сюжеты.
+            </p>
+          </div>
+        </div>
+        <div class="tip"style="background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 70%), url('img/lv_tip1.jpg') right / cover no-repeat;">
+          <div class="tip-content">
+
+          </div>
+        </div>
+
+          <div class="tip" style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 70%), url('img/lv_tip2.jpg') right / cover no-repeat;">
+  
+  <div class="tip-content" >
+            </div>
+          </div>
+          <div class="tip">
+            <div class="tip-content">
+              <h3>Что почитать в плохом настроении</h3>
+              <p>
+                В плохом настроении порой полезно выбирать чтение, которое может поднять вам настроение или отвлечь от повседневных забот. 
+                Юмористическая литература: Комические романы или повести могут подарить вам хороший настроение. Работы авторов вроде П.Г. Вудхауза, Терри Пратчетта или Дугласа Адамса могут быть отличным выбором.
+                Детективы и триллеры: Захватывающие сюжеты могут отвлечь вас от повседневных проблем и заинтриговать. Работы Артура Конан Дойля, Агаты Кристи или Джеймса Паттерсона могут быть интересны.
+                Легкая проза: Определенные книги с легким сюжетом и позитивными персонажами могут подарить вам чувство уюта. Романы современных авторов в жанре "женская литература" или легкой комедии могут быть хорошим выбором.
+                Классика: Иногда прекрасные истории от классических авторов, таких как Джейн Остин, Шарль Диккенс или Марк Твен, могут поднять вам настроение своей глубиной и умением описывать человеческие чувства.
+                Книги по самопомощи: Иногда чтение книг, посвященных самопомощи и психологии, может помочь вам лучше понять свои эмоции и научиться справляться с негативными состояниями.
+            </p>
+            </div>
+          </div>
+          <div class="tip">
+            <div class="tip-content">
+              <h3>Что почитать чтобы уснуть</h3>
+              <p>
+                Для того чтобы хорошо уснуть, рекомендуется выбирать легкую и спокойную литературу, которая поможет расслабиться и уйти от повседневных забот. 
+                Вот несколько типов книг, которые могут быть полезны для чтения перед сном:
+                Легкие романы: Романтическая или семейная литература с простым сюжетом может быть отличным выбором для ухода в мир приятных эмоций.
+                Путеводители или путевые заметки: Чтение о различных местах и приключениях может вызвать приятные мечты и способствовать расслаблению.
+                Книги о природе: Описания природы и естественной красоты могут создать умиротворенную атмосферу. Рассмотрите работы авторов, таких как Джон Мьюр или Мэри Оливер.
+                Поэзия: Красивые стихи или лирическая поэзия могут помочь создать спокойное настроение.
+                Сказки: Добрые сказочные истории или классические сказки могут призвать чувство уюта и безопасности.
+                Аудиокниги с мягким голосом чтеца: Если вам сложно сконцентрироваться на чтении перед сном, вы можете попробовать слушать аудиокниги с мягким и спокойным голосом.
+            </p>
+            </div>
+          </div>
+          <div class="tip" style="background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 70%), url('img/lv_tip3.jpg') right / cover no-repeat;">
+            <div class="tip-content">
+
+            </div>
+          </div>
+        <!-- Добавьте дополнительные блоки советов по аналогии -->
+      </div>
+
+    </div>
+    <!--CONTAINER CLOSED-->
+
+    <div class="MangaBanner">
+        <h1>Узнайте как правильно читать мангу</h1>
+        <a href="manga.html" class="cta-button">Перейти к гайду</a>
+    </div>
+
+<!--###################### FOOTER ####################-->
+
+<footer>
+<div class="social-links">
+  <a href="https://www.facebook.com/slendchat/?locale=ru_RU" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+  <a href="https://www.youtube.com/channel/UCibU1sTxFNn7PoGKFuuFFwA" target="_blank"><img src="img/YouTube.png" alt="YouTube"></a>
+  <a href="https://www.instagram.com/lure87011/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+</div>
+
+<div class="rules-policy">
+  <p><a href="rules.html">Правила использования сайта</a> | <a href="privacy.html">Политика конфиденциальности</a></p>
+</div>
+
+<div class="contact-info">
+  <p>Контактная информация: artmamaliga8@gmail.com</p>
+</div>
+</footer>
+
 </body>
 </html>
