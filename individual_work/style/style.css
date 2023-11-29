@@ -236,7 +236,7 @@ a img {
 .grid-containerTips {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
   grid-gap: 20px;
   padding-top: 20px;
 }
