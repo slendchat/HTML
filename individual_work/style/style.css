@@ -141,6 +141,7 @@ a img {
 .recommendations {
   padding: 20px;
   text-align: center;
+  height: 500px;
 }
 
 .recommendations h2{
@@ -150,6 +151,7 @@ a img {
 .slider {
   display: flex;
   overflow-x: auto;
+  height: 440px;
 }
 
 .book {
@@ -334,7 +336,7 @@ footer {
 
 
   /* Media queries for different screen sizes */
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 1300px){
     .menuContainer{
       width: 100%;
     }
