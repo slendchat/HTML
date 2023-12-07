@@ -190,11 +190,12 @@ a img {
   width: 100%;
   height: 600px;
   margin: 0 auto;
-  background: linear-gradient(to left, transparent, #fff), url('../img/lc_back2.jpg') right top / cover no-repeat;
+  background: linear-gradient(to left, transparent, #fff), 
+  url('../img/lc_back2.jpg') right top / cover no-repeat;
   background-color:#333;
   background-position: right;
   display: grid;
-  grid-template-columns: 60% 1fr; /* 2 части слева и 1 часть справа */
+  grid-template-columns: 60% 1fr; 
   height: min-content;
 }
 
@@ -203,6 +204,10 @@ a img {
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
+}
+.best-genres a{
+  text-decoration: none; 
+  color: black;
 }
 
 .genre {
@@ -245,10 +250,6 @@ a img {
 
 .tip {
   background-color: #fff;
-  /*
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  */
   height: 1fr;
   overflow: hidden;
 }
@@ -317,7 +318,7 @@ footer {
   text-decoration: none;
 }
 .social-links img {
-  width: auto; /* Регулируйте размер изображений по вашему усмотрению */
+  width: auto; 
   height: 30px;
   margin: 0 10px;
   vertical-align: middle;
@@ -403,7 +404,6 @@ footer {
     transform: translateX(-50%);
     transform: translateY(500%);
   }
-  
   .chevron {
     position: absolute;
     width: 28px;
@@ -412,15 +412,12 @@ footer {
     transform: scale3d(0.5, 0.5, 0.5);
     animation: move 3s ease-out infinite;
   }
-  
   .chevron:first-child {
     animation: move 3s ease-out 1s infinite;
   }
-  
   .chevron:nth-child(2) {
     animation: move 3s ease-out 2s infinite;
   }
-  
   .chevron:before,
   .chevron:after {
     content: ' ';
@@ -430,18 +427,15 @@ footer {
     width: 51%;
     background: #fff;
   }
-  
   .chevron:before {
     left: 0;
     transform: skew(0deg, 30deg);
   }
-  
   .chevron:after {
     right: 0;
     width: 50%;
     transform: skew(0deg, -30deg);
-  }
-  
+  } 
   @keyframes move {
     25% {
       opacity: 1;
@@ -460,7 +454,6 @@ footer {
       transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
     }
   }
-  
   .text {
     display: block;
     margin-top: 75px;
